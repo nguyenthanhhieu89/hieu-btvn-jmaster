@@ -68,7 +68,7 @@ public class ListExamImpl implements ListExam {
         while (iterator.hasNext()){
             Person person = iterator.next();
             if (person.getName().contains("k")){
-                list.remove(person);
+                list.remove(iterator);
             }
             info(list);
         }
